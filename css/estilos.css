@@ -1,5 +1,7 @@
 body{
     font-family: 'Dancing Script', cursive;
+    margin: 0;
+    padding: 0;
 
 }
 
@@ -7,9 +9,20 @@ header{
     background-color: #5b7989;
     color: white;    
     border-radius: 10px 10px 0px 0px;
-    display: flex;
 }
 
 header h1{
     text-shadow: 2px 0px #02010a;
+}
+
+
+header ul{
+    margin: 0;
+    padding: 0;    
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
 }
