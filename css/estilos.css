@@ -2,27 +2,48 @@ body{
     font-family: 'Dancing Script', cursive;
     margin: 0;
     padding: 0;
-
+    background-color: #02010a;
 }
+
+/* Contenedor Global*/
+.contenedor{
+    overflow: hidden;
+    width: 80%;
+    margin: auto;
+}
+
+/* Cabecera*/
 
 header{
     background-color: #5b7989;
-    color: white;    
-    border-radius: 10px 10px 0px 0px;
+    color: #ffffff;    
+    border-radius: 10px 10px 0px 0px;   
 }
 
 header h1{
     text-shadow: 2px 0px #02010a;
 }
 
+header a{
+    color: #ffffff;
+    font-size: 1.3em;
+}
 
 header ul{
     margin: 0;
     padding: 0;    
 }
 
-header li{
-    float: left;
+header li{    
     display: inline;
     padding: 0 20px 0 20px;
 }
+header #titulo{
+    float: left;
+}
+
+header nav{
+    float: right;
+    margin-top: 30px;
+}
+
