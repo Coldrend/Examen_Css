@@ -1,3 +1,5 @@
+/* Global*/
+
 body{
     font-family: 'Dancing Script', cursive;
     margin: 0;
@@ -5,19 +7,31 @@ body{
     background-color: #02010a;
 }
 
-/* Contenedor Global*/
-.contenedor{
+body > *{
     overflow: hidden;
     width: 80%;
     margin: auto;
 }
 
+img{
+    box-shadow: 0 2px 0 0, #02010a;
+}
+
 /* Cabecera*/
+
+.contenedor{
+    padding: 0 5%;    
+    margin: auto; 
+    overflow: hidden;
+}
 
 header{
     background-color: #5b7989;
     color: #ffffff;    
-    border-radius: 10px 10px 0px 0px;   
+    border-radius: 10px 10px 0px 0px;  
+    font-size: 1.4em; 
+    font-weight: bold;
+    text-align: center;
 }
 
 header h1{
@@ -26,7 +40,7 @@ header h1{
 
 header a{
     color: #ffffff;
-    font-size: 1.3em;
+    font-size: 1.4em;
 }
 
 header ul{
@@ -36,14 +50,35 @@ header ul{
 
 header li{    
     display: inline;
-    padding: 0 20px 0 20px;
+    padding: 0 5% 0 0;    
+ /*   padding: 0 20px 0 20px; */
 }
 header #titulo{
     float: left;
 }
-
+/*
 header nav{
     float: right;
-    margin-top: 30px;
+    margin-top: 40px;
+}
+*/
+header nav{
+    
+    margin-bottom: 10%;
+}
+/* Paisajes Index */
+
+#imagen_principal{    
+    background-color:  #82c3a6
 }
 
+#imagen_principal img{
+   width: 90%;
+   padding: 2% 5%;
+   display: block;
+   margin: auto;
+}
+
+#imagenes_secundarias{
+
+}
