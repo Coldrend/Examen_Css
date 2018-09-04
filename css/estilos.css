@@ -14,8 +14,12 @@ body > *{
 }
 
 img{
-    box-shadow: 0 2px 0 0, #02010a;
+    width: 100%;
+    display: block;
+    filter: drop-shadow(2px 2px 0px #02010a); 
+   
 }
+
 
 /* Cabecera*/
 
@@ -28,11 +32,11 @@ img{
 header{
     background-color: #5b7989;
     color: #ffffff;    
-    border-radius: 10px 10px 0px 0px;  
-    font-size: 1.4em; 
+    border-radius: 10px 10px 0px 0px;
     font-weight: bold;
     text-align: center;
 }
+
 
 header h1{
     text-shadow: 2px 0px #02010a;
@@ -40,7 +44,7 @@ header h1{
 
 header a{
     color: #ffffff;
-    font-size: 1.4em;
+    font-size: 1.4em; 
 }
 
 header ul{
@@ -56,29 +60,67 @@ header li{
 header #titulo{
     float: left;
 }
+
 /*
 header nav{
     float: right;
     margin-top: 40px;
 }
 */
-header nav{
-    
+
+header nav{    
     margin-bottom: 10%;
 }
+
 /* Paisajes Index */
 
-#imagen_principal{    
+#imagen-principal{    
     background-color:  #82c3a6
 }
 
-#imagen_principal img{
-   width: 90%;
-   padding: 2% 5%;
-   display: block;
-   margin: auto;
+#imagen-principal .marco-fotos{
+    margin: auto;
+    width: 90%;
+    padding: 4% 5%;
 }
 
-#imagenes_secundarias{
+
+#imagenes-secundarias{
+  background-color: #d5c75f;
+  border: 1px;
+  display: flex;
+  flex-direction: column;
+}
+
+#imagenes-secundarias .marco-fotos{
+    margin: auto;
+    width: 70%;
+    padding: 4% 5%;
+}
+
+.marco-fotos{
+    text-align: center;
+   ;
+}
+.marco-fotos a{
+    padding-top: 4%;
+    font-size: 2em;  
+    color: #02010a; 
+}
+
+
+/* Meida Queries*/
+
+@media (min-width:900px){
+    
+    #imagenes-secundarias{
+     display: flex;
+     flex-direction: row;
+}
+    #imagenes-secundarias .marco-fotos{
+        width: 45%;
+    }   
+
+
 
 }
