@@ -109,7 +109,8 @@ header li{
 footer{
     background-color: #C6d5c5;
     margin: auto;  
-    font-size: 1.4em;
+    font-size: 1.2em;
+    border-radius: 0px 0px 10px 10px;   
 }
 
 footer .contenedor{
@@ -117,13 +118,19 @@ footer .contenedor{
     flex-direction: column;
 }
 
+#contacto a{
+    color: #02010a;
+}
+
 #redes-sociales ul{
     padding: 0;
 }
 
+
 #redes-sociales li{
     list-style: none;
-    
+    display: flex;
+    justify-content: space-between;
 }
 
 /* Animaciones */   
