@@ -80,9 +80,7 @@ header li{
     color: #02010a; 
 }
 
-/* Imagenes Index */
-
-
+/* Seccion Imagenes index */
 
 #imagen-principal{    
     background-color:  #82c3a6
@@ -110,9 +108,23 @@ header li{
 
 footer{
     background-color: #C6d5c5;
-
+    margin: auto;  
+    font-size: 1.4em;
 }
 
+footer .contenedor{
+    display: flex;
+    flex-direction: column;
+}
+
+#redes-sociales ul{
+    padding: 0;
+}
+
+#redes-sociales li{
+    list-style: none;
+    
+}
 
 /* Animaciones */   
 
@@ -140,11 +152,14 @@ footer{
 
 @media (min-width:900px){
     
+    /* Global */
+
     body > *{
         overflow: hidden;
         width: 80%;
         margin: auto;
     }
+    /* Cabecera */
 
     header #titulo{
         width: auto;
@@ -155,6 +170,8 @@ footer{
         margin-bottom: 0%;
         width: 40%;
     }
+
+    /*  Seccion Imagenes index */
 
     #imagen-principal .marco-fotos{
         width: 90%;
@@ -169,6 +186,14 @@ footer{
         width: 45%;
     }
 
+    /* Pïe de Pagina Index */
 
+    footer .contenedor{
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
+     footer .contenedor div{
+        flex-basis: 22%;
+    } 
 }
