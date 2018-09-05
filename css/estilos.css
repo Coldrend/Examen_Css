@@ -20,13 +20,12 @@ img{
    
 }
 
-
 /* Cabecera*/
 
 .contenedor{
     padding: 0 5%;    
     margin: auto; 
-    overflow: hidden;
+    overflow: hidden;    
 }
 
 header{
@@ -55,7 +54,7 @@ header ul{
 header li{    
     display: inline;
     padding: 0 5% 0 0;    
- /*   padding: 0 20px 0 20px; */
+
 }
 header #titulo{
     float: left;
@@ -72,7 +71,21 @@ header nav{
     margin-bottom: 10%;
 }
 
-/* Paisajes Index */
+/* Contenedores de imagen */
+
+.marco-fotos{
+    text-align: center;
+    width: 85%;
+}
+.marco-fotos a{
+    padding-top: 4%;
+    font-size: 1.5em;  
+    color: #02010a; 
+}
+
+
+/* Imagenes Index */
+
 
 #imagen-principal{    
     background-color:  #82c3a6
@@ -80,8 +93,7 @@ header nav{
 
 #imagen-principal .marco-fotos{
     margin: auto;
-    width: 90%;
-    padding: 4% 5%;
+    padding: 8% 5%;
 }
 
 
@@ -94,20 +106,23 @@ header nav{
 
 #imagenes-secundarias .marco-fotos{
     margin: auto;
-    width: 70%;
-    padding: 4% 5%;
+    padding: 8% 5% 2%;
 }
 
-.marco-fotos{
-    text-align: center;
-   ;
-}
-.marco-fotos a{
-    padding-top: 4%;
-    font-size: 2em;  
-    color: #02010a; 
+/* Pie de Pagina */
+
+
+/* Animaciones */   
+
+#img-rotar {
+    transition: transform 1s;
+    
 }
 
+#img-rotar:hover {
+    transform: rotate(10deg);
+
+}
 
 /* Meida Queries*/
 
@@ -120,7 +135,11 @@ header nav{
     #imagenes-secundarias .marco-fotos{
         width: 45%;
     }   
-
+    header nav{
+        float: right;
+        margin-top: 30px;
+        margin-bottom: 0%;
+    }
 
 
 }
