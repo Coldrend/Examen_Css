@@ -5,19 +5,14 @@ body{
     margin: 0;
     padding: 0;
     background-color: #02010a;
+    min-width: 320px;
 }
 
 body > *{
     overflow: hidden;
-    width: 80%;
+    width: 95%;
     margin: auto;
-}
-
-img{
-    width: 100%;
-    display: block;
-    filter: drop-shadow(2px 2px 0px #02010a); 
-   
+    
 }
 
 /* Cabecera*/
@@ -36,6 +31,10 @@ header{
     text-align: center;
 }
 
+header #titulo{
+    float: left;
+    width: 100%;
+}
 
 header h1{
     text-shadow: 2px 0px #02010a;
@@ -46,45 +45,43 @@ header a{
     font-size: 1.4em; 
 }
 
-header ul{
-    margin: 0;
-    padding: 0;    
-}
-
-header li{    
-    display: inline;
-    padding: 0 5% 0 0;    
-
-}
-header #titulo{
-    float: left;
-}
-
-/*
-header nav{
-    float: right;
-    margin-top: 40px;
-}
-*/
 
 header nav{    
     margin-bottom: 10%;
+}
+
+header ul{
+    margin: 0;
+    padding: 0;
+    
+}
+
+header li{    
+    display: inline-block;
+    padding: 0 5% 0 0;
 }
 
 /* Contenedores de imagen */
 
 .marco-fotos{
     text-align: center;
-    width: 85%;
+    width: 80%;
 }
+
+.marco-fotos img{
+     width: 100%;
+    display: block;
+    filter: drop-shadow(2px 2px 0px #02010a);
+}
+
 .marco-fotos a{
     padding-top: 4%;
     font-size: 1.5em;  
     color: #02010a; 
 }
 
-
 /* Imagenes Index */
+
 
 
 #imagen-principal{    
@@ -111,35 +108,67 @@ header nav{
 
 /* Pie de Pagina */
 
+footer{
+    background-color: #C6d5c5;
+
+}
+
 
 /* Animaciones */   
 
-#img-rotar {
-    transition: transform 1s;
-    
+#img-rotar img{
+    transition: transform 1s, filter 1s;
 }
 
-#img-rotar:hover {
+#img-rotar img:hover {
     transform: rotate(10deg);
-
+    filter: drop-shadow(2px 2px 0px #82c3a6);
+    border-right: 2px solid;
 }
 
-/* Meida Queries*/
+#img-trasladar img{
+    transition: transform 1s, filter 0.5s;
+}
+
+#img-trasladar img:hover{
+    transform: translate(20px,-5px); 
+    filter: drop-shadow(2px 2px 0px #82c3a6);
+    border-right: 2px solid;
+}
+
+/* Media Queries*/
 
 @media (min-width:900px){
     
-    #imagenes-secundarias{
-     display: flex;
-     flex-direction: row;
-}
-    #imagenes-secundarias .marco-fotos{
-        width: 45%;
-    }   
+    body > *{
+        overflow: hidden;
+        width: 80%;
+        margin: auto;
+    }
+
+    header #titulo{
+        width: auto;
+    }
     header nav{
         float: right;
         margin-top: 30px;
         margin-bottom: 0%;
+        width: 40%;
     }
+
+    #imagen-principal .marco-fotos{
+        width: 90%;
+        padding: 2% 5%;
+    }
+
+    #imagenes-secundarias{
+        display: flex;
+        flex-direction: row;
+}
+    #imagenes-secundarias .marco-fotos{
+        width: 45%;
+    }
+
 
 
 }
