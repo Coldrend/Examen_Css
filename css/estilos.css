@@ -73,7 +73,8 @@ header li{
 .marco-fotos img{
      width: 100%;
     display: block;
-    filter: drop-shadow(2px 2px 0px #02010a);
+    /*filter: drop-shadow(2px 2px 0px #02010a);*/
+    box-shadow: 2px 2px 0 #02010a;
 }
 
 .marco-fotos a{
@@ -106,7 +107,7 @@ header li{
     padding: 8% 5% 2%;
 }
 
-/* Seccion Galeria Paisajes */
+/* Seccion Galeria Paisajes y Retratos */
     
     .galeria{
         display: flex;
@@ -120,19 +121,25 @@ header li{
     }
 
     .galeria img{
-        padding: 10% 0%;}
+        /* padding: 10% 0%;*/
+        margin: 10% 0%;
+    }
 
     #seccion-izquierda .marco-fotos img:first-child {
         filter: blur(10px);
     }
 
-    .galeria .marco-fotos img:nth-child(2){
+    #seccion-izquierda img:nth-child(2), #seccion-derecha img:nth-child(2){
         filter: grayscale(100%);
     }
 
     #seccion-central .marco-fotos img:first-child{
+        filter: grayscale(100%);
+    }   
+    #seccion-derecha .marco-fotos img:first-child{
         filter: sepia(90%);
     }   
+   
 
 /* Pie de Pagina */
 
@@ -249,6 +256,7 @@ footer .contenedor{
 
     .galeria .marco-fotos{
         flex-basis: 33%;
+    
     }
 
     /* Pïe de Pagina Index */
