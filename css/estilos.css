@@ -11,8 +11,7 @@ body{
 body > *{
     overflow: hidden;
     width: 95%;
-    margin: auto;
-    
+    margin: auto;    
 }
 
 .contenedor{
@@ -205,8 +204,6 @@ footer .contenedor{
     border-right: 2px solid;
 }
 
-
-
 /* Media Queries*/
 
 @media (min-width:900px){
@@ -218,6 +215,7 @@ footer .contenedor{
         width: 80%;
         margin: auto;
     }
+
     /* Cabecera */
 
     header #titulo{
@@ -261,6 +259,7 @@ footer .contenedor{
     .galeria img{
         margin: 2% 2%;
     }
+
     /* Pïe de Pagina Index */
 
     footer .contenedor{
