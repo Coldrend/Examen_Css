@@ -5,7 +5,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: #02010a;
-    min-width: 320px;
+    min-width: 320px;    
 }
 
 body > *{
@@ -15,13 +15,13 @@ body > *{
     
 }
 
-/* Cabecera*/
-
 .contenedor{
     padding: 0 5%;    
     margin: auto; 
     overflow: hidden;    
 }
+
+/* Cabecera*/
 
 header{
     background-color: #5b7989;
@@ -29,6 +29,7 @@ header{
     border-radius: 10px 10px 0px 0px;
     font-weight: bold;
     text-align: center;
+    animation: slidein 1s;
 }
 
 header #titulo{
@@ -42,7 +43,7 @@ header h1{
 
 header a{
     color: #ffffff;
-    font-size: 1.4em; 
+    font-size: 1.4em;
 }
 
 
@@ -66,6 +67,7 @@ header li{
 .marco-fotos{
     text-align: center;
     width: 80%;
+    margin: auto;
 }
 
 .marco-fotos img{
@@ -104,6 +106,34 @@ header li{
     padding: 8% 5% 2%;
 }
 
+/* Seccion Galeria Paisajes */
+    
+    .galeria{
+        display: flex;
+        flex-direction: column;
+    }    
+
+    /* filtros */
+
+    .galeria{
+        background-color: #d5c75f;
+    }
+
+    .galeria img{
+        padding: 10% 0%;}
+
+    #seccion-izquierda .marco-fotos img:first-child {
+        filter: blur(10px);
+    }
+
+    .galeria .marco-fotos img:nth-child(2){
+        filter: grayscale(100%);
+    }
+
+    #seccion-central .marco-fotos img:first-child{
+        filter: sepia(90%);
+    }   
+
 /* Pie de Pagina */
 
 footer{
@@ -126,14 +156,29 @@ footer .contenedor{
     padding: 0;
 }
 
-
 #redes-sociales li{
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    font-size: 14px;
+}
+
+#redes-sociales a img{
+    padding-right: 15px;
 }
 
 /* Animaciones */   
+
+@-webkit-keyframes slidein{
+    0%{
+        margin-top: 150%;
+    }
+    60%{
+        margin-top: -5%;
+    }
+    100%{
+        margin-top: 0%;
+    }
+}
 
 #img-rotar img{
     transition: transform 1s, filter 1s;
@@ -154,6 +199,8 @@ footer .contenedor{
     filter: drop-shadow(2px 2px 0px #82c3a6);
     border-right: 2px solid;
 }
+
+
 
 /* Media Queries*/
 
@@ -191,6 +238,17 @@ footer .contenedor{
 }
     #imagenes-secundarias .marco-fotos{
         width: 45%;
+    }
+
+    /* Seccion Galeria Paisajes */
+    
+    .galeria{
+        display: flex;
+        flex-direction: row;
+    }  
+
+    .galeria .marco-fotos{
+        flex-basis: 33%;
     }
 
     /* Pïe de Pagina Index */
